@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(238, 236, 231);
+            font: normal 2em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde, aspernatur tempora earum modi perferendis blanditiis excepturi? Magnam aliquam inventore architecto ut, voluptates laudantium repellendus, corporis consectetur in rerum unde!</p>
+    <p>aaaaaaaaaaaaa</p>
+    <div id="msg">Clique</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var corpo = window.document.getElementsByTagName('body')[0]
+        p1.style.color = 'blue'
+        corpo.style.color = 'green'
+        window.document.write('Está escrito com : '+p1.innerText)
+        /*window.alert(p1.innerHTML)*/
+        var d = window.document.getElementById('msg')
+        d.style.background = 'black'
+        window.document.querySelector('div#msg')
+    </script>
+</body>
+</html>

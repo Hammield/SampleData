@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia</title>
+</head>
+<body>
+    <h1>Mídia e imagem</h1>
+    <p>Utilizando uma imagem dinâmica, pode perceber a notória diferença em abrir o site utilizando diferentes tamanhos de tela</p>
+
+    <picture>
+        <source media="(max-width: 650px)" srcset="imagens/peq.PNG" type="image/PNG">
+        <source media="(max-width: 1050px)" srcset="imagens/med.PNG" type="image/png">
+        <img src="imagens/gran.PNG" alt="Imagem Grande">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/jazz.mp3" type="audio/mpeg">
+        <source src="midia/water_walk.mp3" type="audio/mpeg">
+        <source src="midia/bluez.mp3" type="audio/mpeg">
+        <p>Temos pequenos problemas</p>
+    </audio>
+</body>
+</html>
