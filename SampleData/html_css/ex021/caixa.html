@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #2A2B2E;
+        }
+        header {
+            width: auto;
+            background-color: #8DB38B;
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: #8DB38B;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        footer {
+            background-color: black;
+            color: #F4FFFD;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: #F4FFFD;
+        }
+        nav {
+            background-color: lightgrey;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+
+        }
+        nav > a {
+            text-decoration: none;
+            color: #8A9B68;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+      
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        #bola {
+            width: 100px;
+            height: 100px;
+            background-color: #8A9B68;
+            border-radius: 50%;
+            color: #2A2B2E;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Base</h1>
+        <nav><a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, provident facilis numquam pariatur, tenetur debitis ullam assumenda ea deserunt quam delectus placeat odit aliquam? Illum laboriosam consectetur nihil magni! Beatae.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad dolorem at laboriosam, dicta soluta ullam doloremque enim maiores modi inventore. Autem numquam molestias excepturi doloribus maxime veniam incidunt accusamus alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere modi exercitationem, tempora a numquam voluptatibus animi quis error culpa placeat ipsa? Nisi corrupti, nulla sunt deleniti vel voluptatum eligendi nihil.</p>
+                <aside>
+                    <p>Artigo feito por</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+    <footer>
+         <p>Feito pelo</p>
+    </footer>
+    <div id="bola">a</div>
+</body>
+</html>

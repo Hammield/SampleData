@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+p {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    text-align: justify;
+    height: 200px;
+}
+
+h1 {
+    font-family: 'Sriracha', cursive;
+}
+
+main {
+    height: 50%;
+    width: 50%;
+}

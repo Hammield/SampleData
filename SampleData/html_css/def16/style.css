@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(235, 253, 239);
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+
+header > h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    background-color: #04542E;
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(#09BA65,#04542E);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding-right: 14px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+a {
+    color: #80d1ab;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7cc9a5;
+    text-decoration: underline;
+}
+
+nav > a:hover {
+    color: #80d1ab;
+    font-size: 21px;
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: 'andr';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+#prin {
+    font-family: 'andr', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: #04542E;
+    padding: 20px 20px 20px 20px;
+}
+
+.titulos {
+    font-family: 'andr';
+    background-color: rgb(211, 238, 211);  
+    color: #04542E; 
+    width: 80%;
+    padding-left: 15px; 
+    background-image: linear-gradient(90deg,#80d1ab,white);
+}
+
+main {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+p {
+    text-indent: 30px;
+}
+
+footer { background-color: #04542E;
+    text-indent: 50%;
+    color: white;
+}
+
+#rasc {
+    text-align: center;
+}
+
+#extra {
+    background-color: rgb(235, 253, 239);
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+img {
+    display: block;
+    margin: 0px auto;
+}
+
+iframe {
+    display: block;
+    margin: 0px auto;
+    background-color: #04542E;
+    
+}
+
+li {
+    font-weight: bold;
+    text-decoration: underline;
+}
