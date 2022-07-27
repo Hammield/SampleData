@@ -1,4 +1,0 @@
-# SampleData
- 
- segs.
- 
