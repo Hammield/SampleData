@@ -1,6 +1,5 @@
 let pontos = 120
 let tipo = pontos > 100 ? 'especial' : 'comum'
-console.log(tipo)
 
 //Operador Lógico && = 'e' (Retorna true se TODOS OS VALORES forem true também)
 

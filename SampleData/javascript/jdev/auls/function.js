@@ -19,7 +19,7 @@ console.log(corSite) */
 
 */ 
 
-function dizNome() {
+/*function dizNome() {
     console.log("Teguinha Jr.")
 }
 
@@ -33,4 +33,4 @@ function MultDois(valor) {
 
 var resul = MultDois(20);
 
-console.log(resul)
+console.log(resul) /* */
