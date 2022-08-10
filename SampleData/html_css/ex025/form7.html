@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="" method="post">
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="est" id="iest">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Capital">
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+                <optgroup label="Outros Estados">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PR" >Paraná</option>
+                    <option value="PA">Pará</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="lstprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Motorista</option>
+                <option>Professor</option>
+                <option>Engenheiro</option>
+                <option>Médico</option>
+                <option>Eletricista</option>
+            </datalist>
+        </p>
+
+        <p> <!--Caso utilize textarea, use o método post assim como todos os formulários que contenham dados sensiveis ou o envio de arquivos-->
+            <label for="imsg">Mensagem: </label> 
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

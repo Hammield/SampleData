@@ -1,0 +1,14 @@
+num = 12
+
+while True:
+    if num % 3 == 0 and num % 5 == 0:
+        print('FizzBuzz')
+        break
+    elif num % 3 == 0:
+        print('Fizz')
+        break
+    elif num % 5 == 0:
+        print('Buzz')
+        break
+    else:
+        print(num)

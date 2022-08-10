@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+:root {
+    --samp: #0f4b22;
+    --tes: #51abb2;
+
+    --form: Verdana,sans-serif;
+}
+
+
+body {
+    background-color: var(--samp);
+}
