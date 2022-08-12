@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #41caa0
+}
+
+.d1 {
+    width: 400px;
+    height: 400px;
+    background-color: var(--cor1);
+    border: 45px groove rgb(135, 178, 192);
+    border-bottom: 45px groove lightcyan;
+    border-left: 45px groove lightcyan;
+}
+

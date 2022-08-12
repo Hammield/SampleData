@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolores voluptatum. Quam ea expedita minus odit culpa ducimus eius, necessitatibus modi dolorem commodi quis sint excepturi nisi! Dicta, repudiandae omnis!</p>
+    <script>
+        //var cor=new Array();
+       /* var cor=[];
+        cor.push('Preto'); //.push adciona ao final do array
+        cor.push('Branco');
+        cor.push('Vermelho')
+        cor.push('Verde')
+        cor.push('Azul')
+        cor[2] = 'Amarelo' //adciona um elemento no índice específico
+        document.write(cor);
+
+        var itens=['faca','pederneira','lanterna','chave','luvas','arame']
+        var mochila= [];
+
+        mochila.push(itens[3])
+        document.write(`<br>${mochila}`)*/
+
+        var itens=['faca','pederneira','lanterna','chave','luvas','arame'];
+        var num = [8,5,2,7,6,1,4,3,9,0];
+        var numeros;
+        var jun = [];
+        jun=itens.concat(num);
+        numeros=num.join(); //copia os elementos de uma array para outra variável
+        document.write(`${jun}<br><br>`);
+        document.write(`O número de elementos no array jun é de ${jun.length}<br>`);
+
+        num.sort() //sorteia em ordem crescente
+
+        num.reverse() //sorteia pela ordem em que os valores forem inseridos,o valor em si é irrelevante
+        document.write(num)
+
+        //itens.splice(1,1); //splice remove um elemento de qualquer posição do array, sendo o primeiro parâmetro o índice desse array e o segundo parâmetro o número de elementos a ser removido
+
+        //itens.unshift('tijolo'); //unshift insere um elemento no início dos arrays.
+
+        //itens.shift(); //shift remove um elemento no início dos arrays
+        //document.write(`<br>${itens}<br>`);
+        //document.write(itens.indexOf("lanterna"));
+
+        
+    </script>
+</body>
+</html>

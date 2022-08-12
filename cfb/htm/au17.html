@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function desenha() {
+            var canvas = document.getElementById('canv');
+            var cxt = canvas.getContext('2d');
+            ctx.fillRect(25,25,100,100);
+        }
+    </script>
+</head>
+<body>
+    <h1>teste</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus minus fuga et earum repellendus quis eveniet fugiat tempora velit, temporibus provident numquam nulla, veritatis saepe quod nobis ipsa quibusdam adipisci.</p>
+    <canvas id="canv">
+        Incapaz de reproduzir
+    </canvas>
+    <script>desenha();</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <h1>Testes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque repudiandae velit, voluptate ab natus minus nam, beatae similique repellat recusandae architecto eveniet. Laboriosam voluptatem qui odio excepturi vitae incidunt dolorum.</p>
+    <script>
+        var num2 = 5
+        var num = 9;
+        num++;
+        document.write(num)
+        document.write(`<br>${num2++}<br>`) //Quando se utiliza o operador de incremento, deve ser observado a posição em que  se coloca os sinais, se for antes da variável é tido como um pré-incremento e irá aumentar o valor da variável antes da impressão na tela exemplo: ++num2
+
+        document.write(`${num2}`)//Caso o sinal de incremento seja colocado após a variável, como é visto no código pouco mais acima, ele ira exibir o valor anterior ao incremento, caso imprima novamente na tela irá surgir um valor diferente do anterior por esse mesmo motivo
+
+        //INVERTER SINAL DO NÚMERO
+        var neg= 9
+        neg*=-1;
+        document.write(`<br>${neg}`)
+    </script>
+</body>
+</html>

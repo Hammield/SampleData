@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ab cum laudantium officia rem totam voluptate maxime, debitis, suscipit quasi voluptas. Veritatis aliquid in repellendus nisi illum ullam, voluptates facilis.</p>
+    
+    <script>
+        var pos,msg;
+
+        pos = 1;
+        switch(pos){
+            case 1:
+                msg="Primeiro Lugar"
+                break;
+            case 2:
+                msg="Segundo Lugar"
+                break;
+
+            case 3:
+                msg="Terceiro Lugar"
+                break;
+            default:
+                msg="Fora do Pódio"
+                break;
+        }
+        switch(pos){
+            case 1:
+            case 2:
+            case 3:
+                msg +="<br>Subiu ao Pódio"
+                break;
+            default:
+                msg +="<br>Não subiu ao Pódio"
+        }
+        document.write(msg)
+    </script>
+</body>
+</html>
