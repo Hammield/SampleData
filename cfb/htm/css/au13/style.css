@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+div {
+    height: 50px;
+    
+    margin: 50px;
+}
+
+body {
+    margin: 0px;
+}
+
+#d1 {
+    margin: 0px 80px 20px 0px;
+    background-image: linear-gradient(to right,rgb(127, 143, 238),rgb(255, 255, 255));
+}
+
+#d2 {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin: auto; /*Coloque width para usar o margin auto*/
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        .titulo{
+            color:brown;
+            font-size: 48px;
+            text-decoration: underline;
+        }
+        div{
+            border: 1px solid black;
+            padding: 10px;
+            display: inline-block;
+        }
+        a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">queryselectorAll</h1>
+    <p>Método que retorna os elementos do documento que correspondem a uma classe css ou a uma tag específica</p>
+    <h2 class="titulo">lorem</h2>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum dolor</p>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique sint quae deleniti illum quisquam sapiente, itaque enim tempora molestias reiciendis facilis consectetur placeat ullam molestiae asperiores aliquam? Eius, culpa sunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minus veniam delectus quia quisquam dolores aliquam? Dolore ratione rem numquam maxime natus? Ab, ipsum. Porro ipsum excepturi alias numquam blanditiis.</p>
+
+    </div>
+    <a href="#">link1</a>
+    <a href="#" target="_blank" class="titulo">link2</a>
+    <hr>
+        <script>
+            var ps=document.querySelectorAll("p");
+            ps[0].innerHTML='TESTE';
+            var elementos=document.querySelectorAll("a.titulo");
+            for (let i = 0;i<elementos.length;i++){
+                document.write(`${elementos[i].innerHTML} <br>`);
+            }
+
+            var pa=document.querySelectorAll("div > p");
+            pa[1].style.color='blue'
+        </script>
+</body>
+</html> 

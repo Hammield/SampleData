@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <script>
+        function abrirDialog(){
+            document.getElementById ("d1").setAttribute("open","");
+        }
+        function fecharDialog(){
+            document.getElementById("d1").removeAttribute("open");
+        }
+    </script>
+</head>
+<body>
+    <h1>teste</h1>
+    <button onclick="abrirDialog()">
+        Abrir
+    </button>
+    <button onclick="fecharDialog()">
+        Fechar
+    </button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas necessitatibus quia dignissimos voluptatum quod minima nemo, cupiditate a praesentium assumenda unde, quaerat iusto aspernatur molestiae ab veritatis quo dolorum saepe.</p>
+    <dialog id="d1" open="true">
+        <dfn>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam iusto tempora consectetur assumenda at est? Ipsa illo asperiores at doloremque laborum odio distinctio. Nam reprehenderit consequuntur asperiores commodi laborum mollitia.</p>
+        </dfn>
+
+        <dfn>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero commodi ipsum, porro nobis adipisci dolores distinctio maiores nihil optio et labore quam culpa voluptas dolorum recusandae. In, quas! Accusamus, sunt?</p>
+        </dfn>
+    </dialog>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos illum, repellat, nihil vel odio sit maxime nemo quaerat sed laborum harum ipsam dolore? Asperiores error facere repellendus? Suscipit, amet impedit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem vitae numquam vel doloribus consectetur dolores aperiam suscipit quaerat, blanditiis inventore, eaque illo aspernatur labore repellat delectus eveniet natus distinctio.</p>
+</body>
+</html>

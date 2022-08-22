@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <h1>teste</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque non repudiandae sit laboriosam porro, quidem aperiam consequatur eum. Rem, doloremque accusamus eius nam placeat provident enim quod expedita architecto at?</p>
+    <script>
+        try{
+            document.write("Isso é um teste<br>");
+        }catch(e){
+            document.write(`ERRO: ${e.message}`);
+            console.log(e.message);
+        }
+
+        var num; //Máximo 10
+
+        try {
+            num=prompt("Digite um valor");
+            if (num > 10){
+            throw new Error("Valor inválido");
+            }
+            document.write(`Valor: ${num}`)
+        } catch(e){
+            document.write(`ERRO: ${e.message} (utilize apenas valores inferior que 10)`)
+            num = 10
+        }finally { //Finally é opcional, mas pode ser executado ocorrendo o erro ou não
+            document.write(`<br>Encerramento, Valor final: ${num}`)
+            console.log(num);
+        }
+    </script>
+</body>
+</html>

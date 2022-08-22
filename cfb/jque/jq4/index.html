@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <script src="../jquery-3.6.0.min.js"></script>
+   <style>
+    #bloco{
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        background-color: rgb(194, 218, 240);
+    }
+   </style>
+</head>
+<body>
+    <div id="bloco">
+
+    </div>
+    <p id="texto"></p>
+
+    <script>
+
+       $('#bloco').click(()=>{
+        $("#texto").text("Você clicou no mouse.")
+       })
+
+        $('#bloco').mouseenter(()=>{
+            $("#texto").text("Mouse inserido!")
+        })
+        $('#bloco').mouseleave(()=>{
+            $("#texto").text("Mouse decidiu sair do quadrado!")
+        })
+        $('#bloco').mousemove(()=>{
+            $("#texto").text("O mouse decidiu se mover dentro do quadrado!")
+        })
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        label, input{
+            display: block;
+        }
+        input[type=submit],label{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quaerat numquam modi eligendi, expedita praesentium voluptatibus ducimus dolor reiciendis suscipit debitis eum veritatis voluptates neque quisquam reprehenderit. Ex, veniam dolorum.</p>
+    <form action="#" method="post" name="formu" id="iformu">
+        <label for="inome">Nome: </label>
+        <input type="text" name="nome" id="inome" value="Primeiro - 1">
+        <label for="isenha">Senha: </label>
+        <input type="password" name="senha" id="isenha">
+        <input type="submit" value="Enviar">
+    </form>
+    <form action="#" method="post" name="formu" id="iformu2">
+        <label for="inome">Nome: </label>
+        <input type="text" name="nome" id="inome2" value="Segundo - 2">
+        <label for="isenha">Senha: </label>
+        <input type="password" name="senha" id="isenha2">
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <script>
+        //var fm=document.forms.length;
+        //var fm=document.forms[0].id;
+        //var fm=document.forms.namedItem("iformu2").innerHTML;
+        //var fm = document.forms["iformu2"].elements[0].value;
+
+        /*var fm=document.forms[0];
+        var el=fm.elements;
+        el[0].style.backgroundColor="#0ff"
+        el[0].value="Cleverson Teguinha"*/
+
+        //document.write(fm);
+
+        var fm=document.forms[0];
+        var el=fm.elements;
+
+        for(var i=0;i < el.length-1;i++){
+            el[i].style.backgroundColor="#ddd";
+            el[i].value="Cleverson Teguinha";
+        }
+    </script>
+</body>
+</html>

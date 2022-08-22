@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        .quebra{
+            display: block;
+        }
+        form{
+            border:1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: rgb(93, 151, 124);
+            width: 500px;
+        }
+
+        label {
+            padding-bottom: 14px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="f_cadastro" method="get" autocomplete="on">
+        <label for="f_username">Username: </label>
+        <input class="quebra" type="text" name="f_username" id="f_username" autocomplete="username" required maxlength="16" size="25">
+        <label for="f_password">Password: </label>
+        <input type="password" class="quebra" name="f_password" id="f_password" required minlength="8" maxlength="20" size="20">
+        <label for="esp" class="quebra">Esporte Favorito: </label>
+        <input type="checkbox" name="fut" id="fut">Futebol: 
+        <input type="checkbox" name="bas" id="bas">Basquete: 
+        <input type="checkbox" name="nat" id="nat">Natação: 
+
+        <label class="quebra" for="carro">Possui Carro?</label>
+        <input type="radio" name="carro" id="carro" value="nao">Não
+        <input type="radio" name="carro" id="carro" value="sim">Sim
+
+        <input class="quebra" type="submit" value="Entrar" name="f_entrar">
+    </form>
+</body>
+</html>

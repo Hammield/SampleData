@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>teste</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eaque temporibus dolores quo modi ratione nobis aspernatur expedita pariatur ipsum. Similique natus provident neque maxime tenetur eligendi, recusandae facilis a.</p>
+    <p id="texto"></p>
+
+    <script>
+        let pmx = 0
+        let pmy = 0
+        $(document).mousemove((event)=>{
+            pmx=event.pageX
+            pmy=event.pageY
+            if (pmx > 600){
+                console.log("X maior que 600")
+            }
+            else{
+                console.log("X menor que 600")
+            }
+            $('#texto').text("Mouse X:" + pmx + ", Mouse Y: " + pmy)
+        })
+    </script>
+</body>
+</html>
