@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <script src="../jque/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>teste</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda optio voluptate officia quaerat commodi natus velit excepturi cupiditate atque, repellat a possimus magni ipsa nostrum at odio pariatur tenetur minus.</p>
+    <script>
+        var dt=new Date();
+        var dia=dt.getDate();
+        var mes=dt.getMonth()+1;
+        var ano=dt.getFullYear();
+        var diasem=dt.getDay();
+
+        var horas=dt.getHours();
+        var minutos=dt.getMinutes();
+        var segundos=dt.getSeconds();
+        var miliseg=dt.getMilliseconds();
+
+        let ndt=new Date();
+
+        ndt.setDate(dt.getDate()+2)
+
+        var semana = ['Domingo',"Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"]
+        
+        document.write(dt + "<br><br>");
+
+        for (c in semana){
+            if (c == diasem){
+                document.write(`${semana[c]}: `)
+            }
+        }
+       
+        document.write(` ${dia}/${mes}/${ano} ${horas}:${minutos}:${segundos}:${miliseg}`);
+
+    </script>
+</body>
+</html>

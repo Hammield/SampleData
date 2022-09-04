@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #a6bae4;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 45px;
+    font-variant: small-caps;
+}

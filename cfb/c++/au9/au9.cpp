@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-	int num=04;
+	int num=6;
 	char opc='s';
 	
 	if(num > 5){

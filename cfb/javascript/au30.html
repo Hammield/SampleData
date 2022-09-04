@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <script src="../jque/jquery-3.6.0.min.js"></script>
+    <style>
+        div {
+            border: 1px solid black;
+            background-color: darkolivegreen;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sint harum dicta fugiat nesciunt inventore dolorem rem doloremque at reprehenderit doloribus repellat amet illo cupiditate officiis, odio nemo ex corrupti.</p>
+
+    <div id="quadro"></div>
+    <p id="texto"></p>
+    <script>
+        function tabuada(val=1){
+            for (let c = 1;c<=10;c++){
+                document.write(`${val} x ${c} = ${val*c}<br>`)
+            }
+        }
+
+        tabuada(9);
+
+        var numeros=[5,9,2,1,4,5,92,1,23,9,20,30,15,18,36];
+
+        function media(nums){
+            let tam=nums.length;
+            let soma=0;
+            for(let i=0;i<tam;i++){
+                soma += nums[i];
+            }
+            return soma / tam;
+        }
+
+        document.write(media(numeros));
+
+    </script>
+</body>
+</html>

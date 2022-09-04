@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+ul {
+    list-style-type: armenian;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+li {
+    border: 1px solid black;
+}

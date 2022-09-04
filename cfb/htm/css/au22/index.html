@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var x,y,n=0,ny=0,rotINT,rotYINT;
+
+        function rotateYDIV(){
+            y=document.getElementById("dv1");
+            clearInterval(rotYINT);
+            rotYINT=setInterval("startYRotate()",10);
+        }
+
+        function startYRotate(){
+            ny+=1;
+            y.style.transform=`rotateY(${ny})`;
+            y.style.webkitTransform=`rotateY(${ny})deg`;
+            y.style.OTransform=`rotateY(${ny})deg`;
+            y.style.MozTransform=`rotateY(${ny})deg`;
+        }
+        if (ny==180 || ny>=360){
+            clearInterval(rotYINT);
+            if (ny>=360) {ny=0}
+        }
+    </script>
+</head>
+<body>
+    <h1>teste</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, repellendus reiciendis? Natus, mollitia nulla tenetur fugiat atque officia, quis temporibus deserunt illum, id molestiae? Error deserunt ducimus animi necessitatibus numquam!</p>
+    <div id="dv1" onclick="rotateYDIV()">
+        <p>teste</p>
+    </div>
+</body>
+</html>
