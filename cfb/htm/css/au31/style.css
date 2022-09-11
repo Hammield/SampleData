@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#princi {
+    display: flex;
+}
+
+#fim {
+    display: flex;
+    background-color: rgb(204, 204, 204);
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}

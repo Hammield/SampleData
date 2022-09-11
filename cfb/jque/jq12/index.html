@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <script src="../jquery-3.6.0.min.js"></script>
+    <style></style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                Seletores
+            </li>
+            <li>
+                parent
+            </li>
+            <li>
+                children
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Seletores
+            </li>
+            <li>
+                parent
+            </li>
+            <li>
+                children
+            </li>
+        </ul>
+    </div>
+    <script>
+        /*$('ul').children().css({'border':'1px solid black'}),
+        $('div').children().css({'color':'darkblue'})*/
+        $('div').find('li:first').css({'border':'1px solid darkblue'}),
+        $('div').find('ul').css({'color':'green'}),
+        $('html').find('*').css({'font-weight':'bold'})
+    </script>
+</body>
+</html>

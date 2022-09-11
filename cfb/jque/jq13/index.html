@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div>
+        <span>
+            <h3>
+                Cleverson Teguinha
+            </h3>
+            <p>
+                jQuery
+            </p>
+            <h2>
+                Seletores parent
+            </h2>
+            <p>
+                Siblings
+            </p>
+        </span>
+    </div>
+    <script>
+       /*$('h2').siblings('p').css({'border':'1px solid blue'});*/
+       $('h3').next().css({'border':'1px solid blue'})
+       $('p').prev().css({'border':'1px solid green'})
+
+       /*$('p').prevUntil('h3').css({'border':'1px solid green'})
+       $('p').prevAll().css({'border':'1px solid green'})*/
+    </script>
+</body>
+</html>

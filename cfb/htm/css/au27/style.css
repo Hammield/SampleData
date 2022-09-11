@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+div{
+    border: 1px solid black;
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    /*display: table-cell;
+    text-align: center;
+    vertical-align: middle;*/
+    text-align: center;
+    line-height: 200px;
+    margin-bottom: 10px;
+}
+
+ol,ul,li{
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+ol{
+    display: table;
+    width: 200px;
+}
+
+ul{
+    display: table-row;
+}
+
+li{
+    display: table-cell;
+}
+
+.titulo{
+    background-color: turquoise;
+}
