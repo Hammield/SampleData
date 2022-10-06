@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/*
+
+*{
+    outline:1px solid black;
+}
+*/
+
+header,section,nav,footer{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+}
+
+header{
+    height: 150px;
+}
+
+nav{
+    justify-content: flex-end;
+    background: tomato;
+    flex-wrap: wrap;
+}
+
+nav a {
+    width: 150px;
+    height: 50px;
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    flex-wrap: wrap;
+    flex-wrap:center;
+}
+
+section div{
+    border:1px solid black;
+    flex: 1;
+    margin: 5px;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+footer{
+    background: #888;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}

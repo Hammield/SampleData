@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        .caixa{
+            border: 1px solid black;
+            width: 500px;
+            height: 80px;
+            background-color: #65daf9;
+            color: white;
+        }
+
+        button{
+            background-color: #65daf9;
+            color: white;
+            margin-top: 25px;
+            border: 1px solid #65daf9;
+            padding: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="caixa" class="caixa">
+        <h3>Cleverson</h3>
+        <p>teguknha</p>
+    </div>
+    <button id="btn_mostrar">Ocultar</button>
+    <script>
+        $('#btn_mostrar').click(
+            function(){
+                $('#caixa').toggle()
+                if($('#caixa').is(':visible')){
+                    $('#btn_mostrar').text('Ocultar')
+                }else{
+                    $('#btn_mostrar').text('Mostrar')
+                }
+            }
+        )
+    </script>
+</body>
+</html>

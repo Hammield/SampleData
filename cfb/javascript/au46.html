@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    
+    <p id="txt">Cleverson. Teguinha da Silva Teguinha Silva silva!!!</p>
+
+    <script>
+
+        var texto=document.getElementById("txt").innerHTML;
+
+        //var res=texto.match(/a/ig);
+
+        //var res=texto.match(/[ai]/ig);
+
+        //var res=texto.match(/[^ai]/ig);
+
+        //var res=texto.match(/[a-k]/ig);
+
+        //var res=texto.match(/[a|i|s]/ig);
+
+        var res=texto.match(/\W/ig);
+
+
+        document.write(`${res}: ${res.length}<br>`);
+
+        /*
+        Modificador: i = Busca sem case-sensitive, ou seja, não diferencia letras maiúsculas de minúsculas
+
+        Modificador: g = Diz ao método para encontrar todas as ocorrências da palavra e não parar na primeira encontrada, cada ocorrência é armazenada em uma posição do array
+
+        Modificador: m = Pesquisa normal sem armazenar em forma de array
+        
+        */
+
+        /*
+        Expressão: [abcd] = Pesquisa pelos caracteres "a","b","c" e "d"
+
+        Expressão: [^ab] = Pesquisa por todos os caracteres,menos os "a" e "b"
+
+        Expressão: [a-f] = Pesquisa pelos caracteres de "a" até "f"
+
+        Expressão: [^a-f] = Pesquisa por todos os caracteres, menos os de "a" até "f"
+
+        Expressão: [a|f] = Pesquisa pelos caracteres "a" e "f", semelhante à primeira opção.
+        
+        */
+
+
+        /*
+        
+        Metacaratere: \w, \W, \d, \D, \s, \S, \b, \B, \O, \n, \r, \t, \v, "s+"
+
+        */
+
+    </script>
+</body>
+</html>

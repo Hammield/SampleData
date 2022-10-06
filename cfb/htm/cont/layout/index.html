@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -21,28 +20,91 @@
         </nav>
     </header>
 
-    <section id="banner">
-
+    <section id="banner" class="banner">
+        <img src="../../../../SampleData/html_css/ex003/bunting-banners-flags-1614504322OD1.png" alt="">
     </section>
 
-    <section id="sobre">
-
+    <section id="sobre" class="flexivel ">
+        <article class="borda0" data-anima="esquerda">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde fuga nisi error eum molestiae iure delectus laborum veniam, vel officia quis repellat quos ex accusantium maiores fugiat eveniet magni aliquam?
+        </article>
+        <article class="borda0" data-anima="direita">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quo eius tempore voluptas nobis obcaecati porro, facilis, iste voluptatem dolor ex quia. Debitis inventore alias dolorum praesentium voluptatibus natus magnam.
+        </article>
     </section>
 
-    <section id="vendas">
+    <section id="vendas" class="flexivel">
+        <article class="borda0 conteinerVendas" data-anima="esquerda">
+            <img src="modal/7063-gato-escaminha-tudo-que-voce-precisa-sa-200x200-2.jpg" alt="Imagem 1" onclick="cliqueModal(this)" class="mini">
+            <img src="modal/artigo-especial-200x200.jpg" alt="Imagem 2" onclick="cliqueModal(this)" class="mini">
 
+            <img src="modal/google-200x200.png" alt=" Imagem 3" onclick="cliqueModal(this)" class="mini">
+            <img src="modal/RM-logo-200x200.jpg" alt="Imagem 4 " onclick="cliqueModal(this)" class="mini">
+        </article>
+
+        <article class="borda0 conteinerVendas" data-anima="centro">
+            <img src="modal/7063-gato-escaminha-tudo-que-voce-precisa-sa-200x200-2.jpg" alt="Imagem 1" onclick="cliqueModal(this)" class="mini">
+            <img src="modal/artigo-especial-200x200.jpg" onclick="cliqueModal(this)" class="mini" alt="Imagem 2">
+
+            <img src="modal/google-200x200.png" onclick="cliqueModal(this)" class="mini" alt=" Imagem 3">
+            <img src="modal/RM-logo-200x200.jpg" onclick="cliqueModal(this)" class="mini" alt="Imagem 4 ">
+        </article>
+
+        <article class="borda0 conteinerVendas" data-anima="direita">
+            <img src="modal/7063-gato-escaminha-tudo-que-voce-precisa-sa-200x200-2.jpg"  onclick="cliqueModal(this)" class="mini" alt="Imagem 1">
+            <img src="modal/artigo-especial-200x200.jpg" alt="Imagem 2" onclick="cliqueModal(this)" class="mini">
+
+            <img src="modal/google-200x200.png" onclick="cliqueModal(this)" class="mini" alt=" Imagem 3">
+            <img src="modal/RM-logo-200x200.jpg" onclick="cliqueModal(this)" class="mini" alt="Imagem 4 ">
+        </article>
     </section>
 
-    <section id="login">
+    <section class="parallax p1">
+        <article>
 
+        </article>
     </section>
 
-    <section id="contato">
+    <section id="login" class="flexivel">
+        <article class="borda0" data-anima="esquerda">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde enim laboriosam ipsa libero porro tempora laudantium laborum facere! Sapiente aliquid repellendus et eum, unde iste beatae corporis at omnis quas.
+        </article>
+        <article class="borda0" data-anima="direita">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde enim laboriosam ipsa libero porro tempora laudantium laborum facere! Sapiente aliquid repellendus et eum, unde iste beatae corporis at omnis quas.
+        </article>
+    </section>
 
+    <section class="parallax p1">
+        <article>
+
+        </article>
+    </section>
+
+    <section id="contato" class="flexivel">
+        <article class="borda0" data-anima="esquerda">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde enim laboriosam ipsa libero porro tempora laudantium laborum facere! Sapiente aliquid repellendus et eum, unde iste beatae corporis at omnis quas.
+        </article>
+        <article class="borda0" data-anima="centro">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde enim laboriosam ipsa libero porro tempora laudantium laborum facere! Sapiente aliquid repellendus et eum, unde iste beatae corporis at omnis quas.
+        </article>
+        <article class="borda0" data-anima="direita">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde enim laboriosam ipsa libero porro tempora laudantium laborum facere! Sapiente aliquid repellendus et eum, unde iste beatae corporis at omnis quas.
+        </article>
     </section>
 
     <footer>
 
     </footer>
+
+    <div id="janelaModal" class="janelaModal escondeJanelaModal">
+        <span id="btnFechar" class="fecharModal">x</span>
+        <img id="imgModal" class="imgModal" src="" alt="">
+        <div id="txtModal" class="txtModal"></div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+
 </body>
 </html>

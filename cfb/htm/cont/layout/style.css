@@ -4,13 +4,16 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 :root {
     --fundo: #f5f5f5;
-    --nava: #888;
-    --navhover: #b6dbf1;
-    --fonte: Arial, Helvetica, sans-serif
+    --nava: rgb(19, 19, 19);
+    --navhover: #ffffff;
+    --impar: rgb(231, 231, 231);
+    --fonte: Arial, Helvetica, sans-serif;
+    --menu: #82c0e4
 }
 
 html {
@@ -21,6 +24,8 @@ header{
     padding: 15px 0px;
     position: fixed;
     width: 100%;
+    background-color: var(--menu);
+    z-index: 99;
 }
 
 header nav ul{
@@ -52,7 +57,154 @@ body {
 }
 
 section{
-    border: 1px solid black;
     width: 100%;
     height: 500px;
+}
+
+section:nth-child(even){ /*odd/even*/
+    background-color: var(--impar);
+}
+
+section, footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.banner{
+    display: flex;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.borda0{
+    border: none;
+}
+
+.borda1{
+    border: 1px solid black
+}
+
+.borda{
+    border: 1px solid red;
+}
+
+.flexivel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article{
+    width: 100%;
+    text-align: center;
+}
+
+/*animações*/
+
+[data-anima]{
+    opacity: 0;
+    transition: .8s;
+}
+
+[data-anima='esquerda']{
+    transform: translate3d(-50px,0,0);
+}
+
+[data-anima='direita']{
+    transform: translate3d(50px,0,0);
+}
+
+[data-anima='centro']{
+    transform: translate3d(0,50px,0);
+}
+
+[data-anima].animacao{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+/*Paralax*/
+
+.parallax{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: scale(1.05);
+}
+.p1{
+    background-image: url("../../../javascript/panoramica-universo.jpg");
+}
+.p2{
+    background-image: url("../../../javascript/panoramica-universo.jpg");
+}
+
+/*imagens*/
+.conteinerVendas{
+    justify-content: space-around;
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.mini{
+    width: 49%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+/*modal*/
+
+.janelaModal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 100px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mostraJanelaModal{
+    display: block;
+}
+
+.escondeJanelaModal{
+    display: none;
+}
+
+.fecharModal{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.imgModal{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 800px;
+}
+
+.txtModal{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    height: 150px;
 }

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+p{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    column-gap: 35px;
+    column-rule: 0.05cm dashed black;
+}

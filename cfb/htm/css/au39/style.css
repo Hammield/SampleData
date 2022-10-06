@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+p{
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    /*transition: width 0.4s;*/
+    transition: 0.4s;
+    /*transition-timing-function: linear;*/
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition-delay: 0.5s;
+}
+
+p:hover{
+    width: 500px;
+    height: 120px;
+    background-color: darkred;
+    color: #fff;
+    transform: rotate(180deg);
+}

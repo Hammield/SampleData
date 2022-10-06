@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+p::before{
+    content: "cleverson teguinha da silva";
+    color: darkred;
+}
+
+p::after{
+    content: "cabou-se";
+    color: darkblue;
+}
+
+p:hover{
+    text-decoration: underline;
+}

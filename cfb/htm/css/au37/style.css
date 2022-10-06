@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+h1::first-letter{
+    font-size: 60px;
+}
+
+p::first-line{
+    color: darkred;
+}
+
+::selection{
+    background-color: black;
+    color: white;
+}
+

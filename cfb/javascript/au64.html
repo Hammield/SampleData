@@ -1,0 +1,92 @@
+<!--
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        #painel{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 15px;
+            width: 2150px;
+            height: 2100px;
+            background-color: #ddd;
+        }
+    </style>
+    <script>
+
+        var l,a,px,py,painel;
+
+        function info(){
+            l=window.innerWidth;
+            a=window.innerHeight;
+            px=window.screenX;
+            py=window.screenY;
+
+            painel.innerHTML=`Largura: ${l} <br>Altura: ${a} <br>Pixels X: ${px} <br>Pixels Y: ${py}`;
+        }
+
+        function rolar(){
+            window.scrollBy(1000,1000);
+        }
+
+        function inicia(){
+            document.getElementById('btnTam').addEventListener('click',info);
+            document.getElementById('btnPos').addEventListener('click',rolar)
+
+            painel=document.getElementById('painel');
+        }
+
+        window.addEventListener("load",inicia);
+
+    </script>
+</head>
+<body>
+    
+    <button onclick="" id="btnTam">Tamanho</button>
+    <button id="btnPos">Posição</button>
+
+    <div id="painel"></div>
+</body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        #painel{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script>
+        function inicia(){
+            var qtde=window.length;
+            var painel=document.getElementById("painel").innerHTML=qtde;
+            for(var i=0;i<qtde;i++){
+                window.frames[i].location="au63.html";
+            }
+        }
+
+        window.addEventListener("load",inicia);
+    </script>
+</head>
+<body>
+    <iframe src="" frameborder="1"></iframe>
+    <iframe src="" frameborder="1"></iframe>
+    <iframe src="" frameborder="1"></iframe>
+
+    <div id="painel">oi</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+img{
+    filter: grayscale(88%) contrast(70%) opacity(80%);
+}

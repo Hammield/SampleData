@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+img{
+    border: 1px solid black;
+    width: 130px;
+    height: 130px;
+}
+
+#img1{
+    float: right;
+}
+
+#img2{
+    float: left;
+}
+
+.fix{
+    clear: both;
+}

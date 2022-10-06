@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    border: 1px solid black;
+    background: #ddd;
+}
+
+#d0{
+    background-color: #eef;
+    position: static;
+}
+
+#d1,#d2{
+    width: 300px;
+    height: 150px;
+}
+
+#d1{
+    position: static;
+    z-index: 2;
+}
+
+#d2{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    z-index: 1;
+}

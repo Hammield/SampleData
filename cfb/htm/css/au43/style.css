@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+div{
+    width: 300px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    resize: both;
+    float: left;
+    margin: 15px;
+    overflow: auto;
+}
+
+img{
+    width: 100%;
+    resize: both;
+    overflow: auto;
+}
