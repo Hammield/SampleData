@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.aside a {
+    position: absolute;
+    left: -90px;
+    transition: 0.2s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    background-color: darkgray;
+}
+
+.aside a:hover{
+    left: 0;
+}
+
+#login{
+    top: 20px;
+}
+
+#sistema{
+    top: 80px;
+}
+
+#contato{
+    top: 140px;
+}

@@ -1,0 +1,12 @@
+{
+    "nome":"Teguinha",
+    "time":"Vasco",
+    "vivo":"False",
+    "energia":20000,
+    "mochila":["fuzil","biscoito","pederneira","impressora 3D"],
+    "aeronaves":[
+        {"tipo":"transporte","habilidade":80},
+        {"tipo":"ataque","habilidade":100},
+        {"tipo":"reconhecimento","habilidade":50}
+    ]
+}

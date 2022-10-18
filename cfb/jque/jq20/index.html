@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        .caixa{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: #aaa;
+            position: absolute;
+            left: 0px;
+            top: 50px;
+        }
+    </style>
+    <script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="caixa" class="caixa">
+        <h3>Teguinha</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore inventore exercitationem corporis aliquam at eius assumenda nesciunt eum impedit</p>
+    </div>
+
+    <button id="btn_aumentar">Aumentar</button>
+    <button id="btn_diminuir">Diminuir</button>
+    <button id="btn_esquerda">Esquerda</button>
+    <button id="btn_direita">Direita</button>
+    
+    <script>
+        $('#btn_aumentar').click(
+            function(){
+                $('#caixa').animate({width:"500px"}).animate({height:"500px"},{duration:500})
+            }
+        )
+
+        $('#btn_diminuir').click(
+            function(){
+                $('#caixa').animate({width:"200px"}).animate({height:"200px"})
+            }
+        )
+
+        $('#btn_esquerda').click(
+            function(){
+                $('#caixa').animate({left:'100px'},{complete:()=>{alert('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')}})
+            }
+        )
+
+        $('#btn_direita').click(
+            function(){
+                $('#caixa').animate({left:'0px'})
+            }
+        )
+    </script>
+</body>
+</html>

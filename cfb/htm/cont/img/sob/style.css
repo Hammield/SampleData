@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.conteinerImg{
+    position: relative;
+    width: 50%;
+    margin: 10px;
+}
+
+.containerImg img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sobreposicao{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    background-color: #005a89;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.conteinerImg:hover .sobreposicao{
+    opacity: 1;
+    width: 100%;
+}
+
+.textoImg{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: left;
+}
+
+.textoImg a{
+    text-decoration: none;
+    color: white;
+}
+
+.textoImg a:hover{
+    text-decoration: underline;
+}

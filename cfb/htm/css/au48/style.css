@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+img{
+    width: 500px;
+}
+
+@media screen and (max-width:800px) and (orientation:landscape){
+    body{
+        background: #080;
+    }
+}
+
+@media (max-width:400px){
+    body{
+        background: #800;
+    }
+}

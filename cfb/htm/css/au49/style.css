@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+nav{
+    width: 200px;
+    float: left;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    background: #D55;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+}
+
+article{
+    margin-left: 216px;
+}
+
+@media screen and (max-width:800px){
+    nav li{
+        font-size:20px
+    }
+
+    article div{
+        float: left;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        width: 100%;
+    }
+
+    article{
+        margin-left: 4px;
+    }
+
+    article p{
+        text-align:justify;
+    }
+
+    nav li{
+        font-size:20px;
+    }
+}

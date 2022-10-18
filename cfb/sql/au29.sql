@@ -1,0 +1,1 @@
+select * from cliente where right(s_cpf_cliente,1) in (1,9);
