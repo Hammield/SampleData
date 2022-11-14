@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+
+    </style>
+    <script>
+
+        function inicia(){
+            var novoH=document.createElement("h1");
+            var sub=5;
+            var lista=document.getElementById("elementos");
+            var antigoP=lista.childNodes[sub];
+            var txtH=document.createTextNode(antigoP.innerHTML);
+            novoH.appendChild(txtH);
+            lista.replaceChild(novoH,antigoP);
+        }
+
+        window.addEventListener("load",inicia);
+    </script>
+</head>
+<body>
+    
+    <div id="elementos">
+        <p>teguinha</p>
+        <p>teguinha</p>
+        <p>teguinha</p>
+        <p>teguinha</p>
+        <p>teguinha</p>
+        <p>teguinha</p>
+        <p>teguinha</p>
+        <p>teguinha</p>
+    </div>
+
+</body>
+</html>

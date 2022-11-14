@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@media screen and (max-width:800px) {
+    body{
+        background-color: #008;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body{
+        background-color: #080;
+    }
+}

@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+#textoAlerta{
+    display: none;
+    color: red;
+}
