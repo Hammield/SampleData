@@ -8,6 +8,7 @@ int main(){
 	scanf("%f",&dinheiro);
 	
 	printf("\nDinheiro: %.2f",dinheiro);
+	printf("oi");
 	
 	
 	return 0;

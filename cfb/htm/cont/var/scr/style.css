@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    line-height: 0.7cm;
+    font-size: 17px;
+}
