@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #f4a2b1;
+    --cor2: #87ba23;
+    --cor3: #188afd;
+    --fundoPrincipal: lightgray;
+    --fontePadrao: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--fundoPrincipal);
+}
+
+h1{
+    color: var(--cor3);
+}
+
+p{
+    color: var(--cor2);
+    font-family: var(--fontePadrao);
+}
