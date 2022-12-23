@@ -1,0 +1,10 @@
+.princi{
+    border: 1px solid black;
+}
+
+.not{
+    box-sizing: border-box;
+    float: left;
+    width: 200px;
+
+}
