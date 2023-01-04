@@ -1,0 +1,25 @@
+package au159.test;
+
+import au159.dominio.Aluno;
+
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class SerializacaoTest01 {
+    public static void main(String[] args) {
+        Aluno aluno = new Aluno(3L, "Cleverson Teguinha","558");
+
+    }
+
+    private static void serializar(Aluno aluno){
+        Path path = Paths.get("aluno.ser");
+        try (ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(path))){
+            oos.writeObject(aluno);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+}

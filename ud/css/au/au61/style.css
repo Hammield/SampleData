@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+#container {
+    width: 85%;
+    margin: 0 auto;
+    background: white;
+    min-width: 720px;
+}
+
+#marca {
+    width: 100%;
+    height: 300px;
+    background: #225992 url(imagens/arquivos-necessarios-imagens-liquidas/cabecalho2.jpg) no-repeat center;
+    text-align: center;
+    line-height: 300px;
+}
+
+#imagem img{
+    width: 90%;
+    overflow: hidden;
+}
+
+#conteudo {
+    width: 75%;
+    float: right;
+}
+
+#conteudo-principal {
+    width: 64%;
+    float: left;
+}
+
+#conteudo-secundario {
+    width: 34%;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-secundario h2, #conteudo-secundario p {
+    padding: 0 20px;
+}
+
+#navegacao {
+    width: 23%;
+    float: left;
+    padding: 20px 0;
+    background: #d1d1d1;
+}
+
+#navegacao a {
+    list-style: none;
+}
+
+#navegacao li a {
+    text-decoration: none;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}

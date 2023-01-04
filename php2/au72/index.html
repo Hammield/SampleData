@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <form action="tratar.php" method="POST">
+        <label for="usuario">Usuario: </label>
+        <p><input type="text" name="usuario" id="usuario" required></p>
+        <label for="senha">Senha: </label>
+        <p><input type="password" name="senha" id="senha" required></p>
+        <p><input type="submit" value="Login"></p>
+
+        <p>
+            <label for="check_aceitar">
+                <input type="checkbox" name="check_aceitar" id="check_aceitar" value="1">
+                Aceito os termos e condições do site.
+            </label>
+        </p>
+    </form>
+</body>
+</html>
